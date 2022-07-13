@@ -14,4 +14,11 @@ public class Tree {
         this.heightFt = this.heightFt + 10;
         this.trunkDiameterInches = this.trunkDiameterInches + 1;
     }
+
+    void announceTallTree() {
+        if (this.heightFt > 100) {
+            System.out.println(this.treeType + " Is higher than 100 feet ");
+        }
+
+    }
 }
