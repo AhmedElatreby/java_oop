@@ -20,10 +20,13 @@ public class Main {
         numsList.add(6);
         numsList.add(13);
 
-//        ConditionArrayList divisibleByThreeListy3 =
-//                new ConditionArrayList(isDivisibleByThree,
-//                        numsList);
+        ConditionArrayList divisibleByThreeListy3 =
+                new ConditionArrayList(isDivisibleByThree,
+                        numsList);
 
+        Predicate<Integer> isDivisbleBySix = n -> Math.abs(n) % 6 ==0;
+        ConditionArrayList conditionArrayList = new ConditionArrayList(
+                isDivisbleBySix, divisibleByThreeListy);
 
     }
 }

@@ -17,6 +17,15 @@ public class ConditionArrayList extends ArrayList<Integer> {
         this.condition = predicate;
     }
 
+    public ConditionArrayList(Predicate<Integer> predicate,
+                              ArrayList<Integer> arrayList){
+        super(arrayList.stream()
+                .filter(predicate)
+                .collect(Collectors.toList()));
+        this.condition = predicate;
+
+    }
+
     @Override
     public void add(int index, Integer element) {
         if (isEligible(element)) {
