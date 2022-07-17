@@ -9,5 +9,7 @@ public class Main {
         System.out.println("First contact: " + name + " " + email);
         System.out.println("Second contact: " + name + " " + "Phone number:  " + number + " " + "Email address: " + email);
 
+        System.out.println(myContact);
+
     }
 }

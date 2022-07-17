@@ -13,4 +13,11 @@ public class PhoneNumber extends Contact{
         this.phoneNumber = phoneNumber;
         return phoneNumber;
     }
+
+    @Override
+    public String toString() {
+        return "PhoneNumber{" +
+                "phoneNumber=" + phoneNumber +
+                '}';
+    }
 }

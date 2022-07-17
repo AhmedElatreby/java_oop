@@ -28,4 +28,12 @@ public class Contact {
         this.email = email;
         return email;
     }
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
