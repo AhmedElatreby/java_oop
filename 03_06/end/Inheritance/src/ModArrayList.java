@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
-public class ModArrayList<D> extends ArrayList<D> {
+public class ModArrayList<E> extends ArrayList<E> {
 
-    public D getUsingMod(int index) {
+    public E getUsingMod(int index) {
         int validIndex = Math.abs(index) % this.size();
         return this.get(validIndex);
     }
